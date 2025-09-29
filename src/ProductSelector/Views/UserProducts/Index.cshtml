@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ProductSelector.Models.UserProduct>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                User
+            </th>
+            <th>
+                Products
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConfigJson)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.GroupBy(t => t.UserId)) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstOrDefault().User.UserName)
+            </td>
+            <td>
+                @string.Join(",", @item.Select(t => t.Product.DisplayName))
+                @* @Html.DisplayFor(modelItem => item.ProductId) *@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstOrDefault().ConfigJson)
+            </td>
+            <td>
+                    <form asp-action="Deploy">
+                        <input type="hidden" name="userId" value="@item.FirstOrDefault().UserId"/>
+                        <input type="submit" value="deploy" class="btn btn-success" />
+                    </form>
+                    <form asp-action="Deploy">
+
+                        <input type="hidden" name="Destroy" value="true" />
+                        <input type="hidden" name="userId" value="@item.FirstOrDefault().UserId" />
+                        <input type="submit" value="Destroy" class="btn btn-danger" />
+                    </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,116 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/ProductDeployer/user-1-stack",
+        "latest": {
+            "manifest": {
+                "time": "2025-09-24T14:58:42.2217955+05:00",
+                "magic": "e151377f41b4045974ddd5f40a88fe639ba8b472299593101102ef34d2330671",
+                "version": "v3.197.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:VY50X2CrMu8=:v1:majOhpaQEAnXQ4Om:/dJl9brn6pil1rdNrH9b35n8xSFbKw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:user-1-stack::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-user-1-stack",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "producta-containerName": "1-producta-container",
+                        "productc-containerName": "1-productc-container"
+                    },
+                    "created": "2025-09-24T09:34:29.0519798Z",
+                    "modified": "2025-09-24T09:34:29.0519798Z"
+                },
+                {
+                    "urn": "urn:pulumi:user-1-stack::ProductDeployer::pulumi:providers:docker::default_4_8_2",
+                    "custom": true,
+                    "id": "edfbc006-7e4a-44b1-8ff1-c7a2efa08d45",
+                    "type": "pulumi:providers:docker",
+                    "inputs": {
+                        "__internal": {},
+                        "version": "4.8.2"
+                    },
+                    "outputs": {
+                        "version": "4.8.2"
+                    },
+                    "created": "2025-09-24T09:34:29.1609619Z",
+                    "modified": "2025-09-24T09:34:29.1609619Z"
+                },
+                {
+                    "urn": "urn:pulumi:user-1-stack::ProductDeployer::docker:index/image:Image::localhost/1-productc:latest",
+                    "custom": true,
+                    "id": "localhost/1-productc:latest",
+                    "type": "docker:index/image:Image",
+                    "inputs": {
+                        "build": {
+                            "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductConfiguratorPOC\\src\\ProductC",
+                            "contextDigest": "1c3444a67602239b12091debcc58209a3b44e239c19995719209f1e52ad9bec1",
+                            "dockerfile": "C:\\Users\\ILI Digital User\\source\\repos\\ProductConfiguratorPOC\\src\\ProductC/Dockerfile",
+                            "platform": "linux/amd64"
+                        },
+                        "buildOnPreview": false,
+                        "imageName": "localhost/1-productc:latest",
+                        "skipPush": true
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:nXjcsNVbV9z0afOe:0Wbe/vPahUCBT+2/LUXtK/a1WekMHl/aVMiYUy1B9SHrLeI5sFlN/p+dV/QnFxEoiIvPkYRdLUC8gIplBOmZvJWMIH7ANxFC6h2HJrk3ZkQFEOSvaqZNt+IQVsyXrkp6bxPvQFhAip9X+hM/AkRfLbGTlX5VG/ZoYhafUxzV1h893nkT438njw5Qz0PUD6Ga0bWdxpf9PhTqXKmrG1SjdVn31nSWvwV/M2OoQ9iYi4bmxJdMJENBiHjhTcz3Dyn+5LkFiuL/Ab/okv7zfwuxA4oDUfCOfOxSjF8gqxwAagz2QGHKggoLNwX+VLksBaIBACGaIg9KYyC4aesxUIwHQ5nP9NXkCKGI+B+4WaZtva19Atkn7DVKl7T0OxbUWJt9KiJSh3EXJtXyD6LAO7s3BAdj+pwkhGpgevdAV7ZYaa8+pDVEtfUJmcW9OZlG7PRjoasSPAKeYrRRZT3tLrEMK8OiJDp66jA94x+y9BwpV6pcRPpbC4ITKJtD/5jj7hvLFsxbw/eSXIK44xaBMjQtyIFhtNaylF9pG3bwzeiP+D++rw=="
+                        },
+                        "baseImageName": "localhost/1-productc:latest",
+                        "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductConfiguratorPOC\\src\\ProductC",
+                        "dockerfile": "Dockerfile",
+                        "imageName": "localhost/1-productc:latest",
+                        "platform": "linux/amd64",
+                        "registryServer": "",
+                        "repoDigest": "sha256:e1328eef5dc8c58b2d63e03f914d37c17360a93035107c2f606e6323ea758b96"
+                    },
+                    "parent": "urn:pulumi:user-1-stack::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-user-1-stack",
+                    "provider": "urn:pulumi:user-1-stack::ProductDeployer::pulumi:providers:docker::default_4_8_2::edfbc006-7e4a-44b1-8ff1-c7a2efa08d45",
+                    "created": "2025-09-24T09:34:31.8873082Z",
+                    "modified": "2025-09-24T09:49:12.5181717Z"
+                },
+                {
+                    "urn": "urn:pulumi:user-1-stack::ProductDeployer::docker:index/image:Image::localhost/1-producta:latest",
+                    "custom": true,
+                    "id": "localhost/1-producta:latest",
+                    "type": "docker:index/image:Image",
+                    "inputs": {
+                        "build": {
+                            "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductConfiguratorPOC\\src\\ProductA",
+                            "contextDigest": "0f9f8bb6bfe7ea651e558ad96a499942933a111925a6f69e6c43dbeb817febee",
+                            "dockerfile": "C:\\Users\\ILI Digital User\\source\\repos\\ProductConfiguratorPOC\\src\\ProductA/Dockerfile",
+                            "platform": "linux/amd64"
+                        },
+                        "buildOnPreview": false,
+                        "imageName": "localhost/1-producta:latest",
+                        "skipPush": true
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:stut4efiJ5hzM5Jk:p3ohfs0GcY3wIdHY9zGXd9tlaSv1avs2XzqBohLgk0nmiSZLH3MItrh7g71jCUbbXeMnpOEC7X4GA9ug3vaeotFfQ4rLwNus50Vad6UGeLHIlybNEZnV1BrKNzSA87bE0X+9vzr2Pkoa8ARUpdRHcy5VExdRFxSKLXCHYn22qlgbW3BEBEeXqddlsUgosJxZ5uRBH67ZgDXowgi+MGwYZLkfClbEDle2ZCfjevYbMMQLChWlbR4S+qUq8dHX8fAY++9/jKB3JKziLwBa/ZRw1uVkx1BqOxhhJ8gyZxAPomGBJaSk2gcuf+RZ90Kul7Esohr15tjmmfdxHFRexFIOqeSRUYc5K0+oEvTSYTBRfPWmH+NGAyAiCrTm/ZbzcqBIRTTUtM5aJRJS7ewIEyF5JgdVjA/pBM26C99deIeRn2RAV2VDKaSaIDJ/Ziuza0zqvIm57MceEgYKzw//dyQn/LvgoFMuUUS+x+aFOTV+cOIr1T8AdYaZ8cmkt9Ztoht//cfV901IRVl7CNOto0Nw1nSevM8w9iLGIaklzs+hY9CFLg=="
+                        },
+                        "baseImageName": "localhost/1-producta:latest",
+                        "context": "C:\\Users\\ILI Digital User\\source\\repos\\ProductConfiguratorPOC\\src\\ProductA",
+                        "dockerfile": "Dockerfile",
+                        "imageName": "localhost/1-producta:latest",
+                        "platform": "linux/amd64",
+                        "registryServer": "",
+                        "repoDigest": "sha256:5381851ab1605d945d5ed79d09c4f279ce3bf50d6d91920d5fe87e2a4c307de4"
+                    },
+                    "parent": "urn:pulumi:user-1-stack::ProductDeployer::pulumi:pulumi:Stack::ProductDeployer-user-1-stack",
+                    "provider": "urn:pulumi:user-1-stack::ProductDeployer::pulumi:providers:docker::default_4_8_2::edfbc006-7e4a-44b1-8ff1-c7a2efa08d45",
+                    "created": "2025-09-24T09:34:31.902266Z",
+                    "modified": "2025-09-24T09:34:31.902266Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

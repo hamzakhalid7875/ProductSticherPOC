@@ -1,0 +1,3 @@
+name: ProductDeployer
+runtime: dotnet
+main: C:\Users\ILI Digital User\source\repos\ProductConfiguratorPOC\src\ProductSelector

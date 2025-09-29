@@ -1,0 +1,29 @@
+{
+    "kind": "refresh",
+    "startTime": 1758705131,
+    "message": "",
+    "environment": {
+        "exec.kind": "auto.inline",
+        "pulumi.arch": "amd64",
+        "pulumi.env.PULUMI_BACKEND_URL": "set",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.env.PULUMI_SECRETS_PROVIDER": "set",
+        "pulumi.flag.exec-kind": "set",
+        "pulumi.flag.non-interactive": "true",
+        "pulumi.flag.skip-preview": "true",
+        "pulumi.flag.stack": "set",
+        "pulumi.flag.yes": "true",
+        "pulumi.os": "windows",
+        "pulumi.version": "v3.197.0",
+        "stack.environments": "[]",
+        "updatePlan": "false"
+    },
+    "config": {},
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1758705132,
+    "resourceChanges": {
+        "delete": 2,
+        "same": 3
+    }
+}
