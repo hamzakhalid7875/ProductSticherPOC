@@ -1,0 +1,39 @@
+{
+    "kind": "refresh",
+    "startTime": 1759227938,
+    "message": "Add project files.",
+    "environment": {
+        "exec.kind": "auto.inline",
+        "git.author": "Hamza Khalid",
+        "git.author.email": "hamza.khalid@ili.digital",
+        "git.committer": "Hamza Khalid",
+        "git.committer.email": "hamza.khalid@ili.digital",
+        "git.dirty": "true",
+        "git.head": "1c2dab44542af27ea8ce54ad18162cd41cdadf1f",
+        "git.headName": "refs/heads/master",
+        "pulumi.arch": "amd64",
+        "pulumi.env.PULUMI_BACKEND_URL": "set",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.env.PULUMI_SECRETS_PROVIDER": "set",
+        "pulumi.flag.exec-kind": "set",
+        "pulumi.flag.non-interactive": "true",
+        "pulumi.flag.skip-preview": "true",
+        "pulumi.flag.stack": "set",
+        "pulumi.flag.yes": "true",
+        "pulumi.os": "windows",
+        "pulumi.version": "v3.197.0",
+        "stack.environments": "[]",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "hamzakhalid7875",
+        "vcs.repo": "ProductSticherPOC",
+        "vcs.root": "src/ProductSelector"
+    },
+    "config": {},
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1759227938,
+    "resourceChanges": {
+        "same": 1
+    }
+}
